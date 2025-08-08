@@ -1,8 +1,22 @@
-const input1 = document.querySelector('#myInput');
-const button1 = document.querySelector('#myButton');
+// Get References
+const myCountValue = document.querySelector('#count');
+const myIncrementButton = document.querySelector('#incrementButton');
+const myDecrementButton = document.querySelector('#decrementButton');
 
-button1.addEventListener('click', () => {
-  const name = input1.value.trim();
-  alert(`Hello There ${name}`);
-  input1.value = '';
+// Declare a variable to store the count, initially set to 0.
+let count = 0;
+
+// Increment button
+// Arrow function modern
+myIncrementButton.addEventListener('click', () => {
+  count++;
+  myCountValue.innerText = count;
 });
+
+// decrement button
+// Function old
+myDecrementButton.addEventListener('click', myFunction);
+function myFunction() {
+  count--;
+  myCountValue.innerText = count;
+}
