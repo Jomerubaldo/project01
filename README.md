@@ -2,4 +2,4 @@
 
 ## Counter App
 
-### I learned DOM, Events, Functions and ID
+### Click a button to increase/decrease/reset a number
